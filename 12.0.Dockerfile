@@ -1,4 +1,4 @@
-FROM python:3.5-stretch as base
+FROM i386/python:3.5-stretch as base
 EXPOSE 8069 8072
 
 ARG MQT=https://github.com/OCA/maintainer-quality-tools.git
