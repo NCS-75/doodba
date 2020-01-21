@@ -1,5 +1,4 @@
-FROM python:3.5-stretch AS base
-
+FROM python:3.5-stretch as base
 EXPOSE 8069 8072
 
 ARG MQT=https://github.com/OCA/maintainer-quality-tools.git
@@ -131,7 +130,7 @@ LABEL org.label-schema.schema-version="$VERSION" \
       org.label-schema.vcs-url="https://github.com/Tecnativa/doodba"
 
 # Onbuild version, with all the magic
-FROM base AS onbuild
+#FROM base AS onbuild
 
 # Subimage triggers
 ONBUILD ENTRYPOINT ["/opt/odoo/common/entrypoint"]
