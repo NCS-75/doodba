@@ -3,4 +3,7 @@ rules:
   - base: master
     upstream: Tecnativa:master
     mergeMethod: merge
+  - base: master-docker-hub-building
+    upstream: Tecnativa:master
+    mergeMethod: merge
 label: ":alien: pull from Tecnativa"
