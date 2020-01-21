@@ -106,8 +106,8 @@ RUN python -m venv --system-site-packages /qa/venv \
 # This is at the end to benefit from cache at build time
 # https://docs.docker.com/engine/reference/builder/#/impact-on-build-caching
 ARG ODOO_SOURCE=OCA/OCB
-ARG ODOO_VERSION=12.0
-ENV ODOO_VERSION="$ODOO_VERSION"
+#ARG ODOO_VERSION=12.0
+ENV ODOO_VERSION="12.0"
 RUN debs="libldap2-dev libsasl2-dev" \
     && apt-get update \
     && apt-get install -yqq --no-install-recommends $debs \
